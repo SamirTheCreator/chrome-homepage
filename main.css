@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: menlo;
+}
+
+.main {
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/3980364/pexels-photo-3980364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.time {
+    font-family: menlo;
+    color: white;
+    font-size: 48px;
+}
+.date {
+    font-family: menlo;
+    color: white;
+    font-size: 48px;
+}
+
+
+.quote-container {
+  width: 900px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote-text {
+  font-size: 24px;
+  color: white;
+}
+
+.long-quote {
+  font-size: 20px;
+}
+
+.fa-quote-left {
+
+  font-size: 28px;
+}
+
+.quote-author {
+    align-self: flex-end;
+    color:white;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+
+/* button:hover {
+  filter: brightness(1%);
+} */
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.3rem;
+}
+
+/* media query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
